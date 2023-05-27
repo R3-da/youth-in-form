@@ -21,7 +21,7 @@ export default function Home() {
       imageUrl: web1,
       icons: [
         { icon: AiFillGithub, link: "https://github.com/R3-da/Insectify" },
-        { icon: BsAndroid, link: "https://www.twitter.com/example" },
+        { icon: BsAndroid, link: "/daytics.apk" },
       ],
       description: "Insectify : Identify Beetles Using A.I",
     },
@@ -29,7 +29,7 @@ export default function Home() {
       imageUrl: web2,
       icons: [
         { icon: AiFillGithub, link: "https://github.com/R3-da/Daytics" },
-        { icon: BsAndroid, link: "/daitics.apk" },
+        { icon: BsAndroid, link: "/daytics.apk" },
       ],
       description: "Daytics : Plan & Keep Track Of Your Day",
     },
@@ -208,6 +208,7 @@ export default function Home() {
                           <a
                             key={iconIndex}
                             href={item.link}
+                            download={item.link.endsWith(".apk")} // Add the download attribute conditionally for .apk links
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-white text-4xl m-2 transition-colors duration-300 hover:text-gray-200"
