@@ -1,10 +1,7 @@
 import Head from "next/head";
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-} from "react-icons/ai";
-import { BsStackOverflow } from 'react-icons/bs';
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { BsAndroid, BsStackOverflow, BsFillMoonStarsFill } from 'react-icons/bs';
+import { FaHandPointDown, FaGooglePlay } from "react-icons/fa";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
 import code from "../public/code.png";
@@ -15,12 +12,43 @@ import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
-
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const overlayImages = [
+    {
+      imageUrl: web1,
+      icons: [
+        { icon: AiFillGithub, link: "https://github.com/R3-da/Insectify" },
+        { icon: BsAndroid, link: "https://www.twitter.com/example" },
+      ],
+      description: "Insectify : Identify Beetles Using A.I",
+    },
+    {
+      imageUrl: web2,
+      icons: [
+        { icon: AiFillGithub, link: "https://github.com/R3-da/Daytics" },
+        { icon: BsAndroid, link: "/daitics.apk" },
+      ],
+      description: "Daytics : Plan & Keep Track Of Your Day",
+    },
+    {
+      imageUrl: web3,
+      icons: [
+        { icon: AiFillGithub, link: "https://github.com/R3-da/youtube-music-downloader" },
+      ],
+      description: "Python Youtube Playlist Downloader",
+    },
+    {
+      imageUrl: web4,
+      icons: [
+        { icon: AiFillGithub, link: "https://github.com/R3-da/the_morrocan_rap_board_4" },
+        { icon: FaGooglePlay, link: "https://play.google.com/store/apps/details?id=com.reda.rwipaboard" },
+      ],
+      description: "Rwipa Board : Signature Catchphrases From Moroccan Rappers",
+    },
+  ];
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -61,8 +89,7 @@ export default function Home() {
               Android Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              Connect with me down below!<FaHandPointDown className="inline-block ml-2 text-teal-600" />
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a
@@ -162,60 +189,39 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
-            </div>
+            {overlayImages.map((overlayImage, index) => (
+              <div className="basis-1/3 flex-1 relative" key={index}>
+                <div className="group rounded-lg overflow-hidden">
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={1000}
+                    height={1000}
+                    layout="responsive"
+                    src={overlayImage.imageUrl}
+                    alt={`Image ${index + 1}`}
+                  />
+                  <div className="overlay-icons absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                    <div className="flex items-center justify-center flex-wrap">
+                      {overlayImage.icons.map((item, iconIndex) => {
+                        const IconComponent = item.icon;
+                        return (
+                          <a
+                            key={iconIndex}
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white text-4xl m-2 transition-colors duration-300 hover:text-gray-200"
+                          >
+                            <IconComponent />
+                          </a>
+                        );
+                      })}
+                    </div>
+                    <p className="text-white text-sm mt-2 text-center font-bold">{overlayImage.description}</p> {/* Added description */}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </main>
