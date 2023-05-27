@@ -118,7 +118,7 @@ export default function Home() {
               </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image src={deved} alt="" layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
@@ -146,25 +146,24 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image src={code} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Android Dev
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+                Building Clean architecture android Apps, and making ideas come to life.
               </p>
               <h4 className="py-4 text-teal-600">Technologies I Use</h4>
               <p className="text-gray-800 py-1">Native Android Dev</p>
               <p className="text-gray-800 py-1">React Native</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image src={design} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 UI/UX
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
+                Creating elegant designs suited for each use case following core
                 design theory.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
@@ -173,13 +172,12 @@ export default function Home() {
               <p className="text-gray-800 py-1">Adobe XD</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
+              <Image src={consulting} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Sound Design</h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+                Sound design and music production.
               </p>
-              <h4 className="py-4 text-teal-600">DAW's I Use</h4>
+              <h4 className="py-4 text-teal-600">DAW&apos;s I Use</h4>
               <p className="text-gray-800 py-1">FL Studio</p>
             </div>
           </div>
