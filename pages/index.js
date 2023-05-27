@@ -14,14 +14,14 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const overlayImages = [
     {
       imageUrl: web1,
       icons: [
         { icon: AiFillGithub, link: "https://github.com/R3-da/Insectify" },
-        { icon: BsAndroid, link: "/daytics.apk" },
+        { icon: BsAndroid, link: "/insectify.apk" },
       ],
       description: "Insectify : Identify Beetles Using A.I",
     },
