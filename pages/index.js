@@ -21,7 +21,7 @@ export default function Home() {
       imageUrl: web1,
       icons: [
         { icon: AiFillGithub, link: "https://github.com/R3-da/Insectify" },
-        { icon: BsAndroid, link: "/insectify.apk" },
+        { icon: FaGooglePlay, link: "/insectify.apk" },
       ],
       description: "Insectify : Identify Beetles Using A.I",
     },
@@ -29,7 +29,7 @@ export default function Home() {
       imageUrl: web2,
       icons: [
         { icon: AiFillGithub, link: "https://github.com/R3-da/Daytics" },
-        { icon: BsAndroid, link: "/daytics.apk" },
+        { icon: BsAndroid, link: "https://play.google.com/store/apps/details?id=com.reda.insectify" },
       ],
       description: "Daytics : Plan & Keep Track Of Your Day",
     },
