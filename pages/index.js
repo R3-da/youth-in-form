@@ -71,10 +71,10 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="/resume.pdf"
+                  href="/Haddan_Reda_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => {window.open('/resume.pdf', '_blank');}}
+                  onClick={() => {window.open('/Haddan_Reda_Resume.pdf', '_blank');}}
                 >
                   Resume
                 </a>
