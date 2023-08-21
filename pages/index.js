@@ -43,10 +43,9 @@ export default function Home() {
     {
       imageUrl: web4,
       icons: [
-        { icon: AiFillGithub, link: "https://github.com/R3-da/the_morrocan_rap_board_4" },
-        { icon: FaGooglePlay, link: "https://play.google.com/store/apps/details?id=com.reda.rwipaboard" },
+        { icon: AiFillGithub, link: "https://github.com/R3-da/JamsterScanner" },
       ],
-      description: "Rwipa Board : Signature Catchphrases From Moroccan Rappers",
+      description: "Jamster : A MIDI Scanner/Transposer ",
     },
   ];
 
@@ -126,9 +125,12 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Bio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              As an experienced Android developer, 
-              I bring a wealth of expertise in designing captivating UI/UX and 
-              crafting high-quality Android apps.
+              👨‍💻 Android & Web Developer | Open-Source Enthusiast,
+              🚀 Passionate Software Developer with expertise in Android (Kotlin, React Native) and web development (HTML, CSS, JS, SQL, PHP, React.js, Angular).
+              Basic knowledge in DevOps (Docker, Kubernetes, AWS, Jenkins, CI/CD).
+              🌱 Actively contributing to open-source projects on GitHub.
+              🛠️ Eager to make an impact in the tech industry.
+              🤝 Let's connect!.
               <span className="text-teal-500">  </span>
               <span className="text-teal-500"> </span>
               With a portfolio featuring successful freelance projects 
@@ -140,7 +142,7 @@ export default function Home() {
             that enhance the overall user engagement. 
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Unlock the full potential of your Android projects 
+            Unlock the full potential of your projects 
             as we work together to bring them to life with expertise and dedication.
             </p>
           </div>
@@ -151,11 +153,12 @@ export default function Home() {
                 Android Dev
               </h3>
               <p className="py-2">
-                Building Clean architecture android Apps, and making ideas come to life.
+                Building clean architecture android Apps and Websites, and making ideas come to life.
               </p>
               <h4 className="py-4 text-teal-600">Technologies I Use</h4>
               <p className="text-gray-800 py-1">Native Android Dev</p>
               <p className="text-gray-800 py-1">React Native</p>
+              <p className="text-gray-800 py-1">React JS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={design} alt="" width={100} height={100} />
