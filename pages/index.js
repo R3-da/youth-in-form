@@ -85,7 +85,7 @@ export default function Home() {
               Haddan Reda
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Android Developer.
+              Mobile/Web Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Connect with me down below!<FaHandPointDown className="inline-block ml-2 text-teal-600" />
