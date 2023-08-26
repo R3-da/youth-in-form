@@ -214,7 +214,7 @@ export default function Home() {
                             download={item.link.endsWith(".apk")} // Add the download attribute conditionally for .apk links
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-200 text-4xl m-2 transition-colors duration-300 hover:text-white"
+                            className="text-gray-100 text-4xl m-2 transition-colors duration-300 hover:text-white"
                           >
                             <IconComponent />
                           </a>
