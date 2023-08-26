@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+//import { BiSolidDownload } from "react-icons/bi";
 import { BsAndroid, BsStackOverflow, BsFillMoonStarsFill } from 'react-icons/bs';
 import { FaHandPointDown, FaGooglePlay } from "react-icons/fa";
 import { useState } from "react";
@@ -213,7 +214,7 @@ export default function Home() {
                             download={item.link.endsWith(".apk")} // Add the download attribute conditionally for .apk links
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white text-4xl m-2 transition-colors duration-300 hover:text-gray-200"
+                            className="text-gray-200 text-4xl m-2 transition-colors duration-300 hover:text-white"
                           >
                             <IconComponent />
                           </a>
