@@ -30,7 +30,7 @@ export default function Home() {
       imageUrl: web2,
       icons: [
         { icon: AiFillGithub, link: "https://github.com/R3-da/Daytics" },
-        { icon: BsAndroid, link: "/daytics.apk" },
+        { icon: BiSolidDownload, link: "/daytics.apk" },
       ],
       description: "Daytics : Plan & Keep Track Of Your Day",
     },
@@ -38,7 +38,7 @@ export default function Home() {
       imageUrl: web3,
       icons: [
         { icon: AiFillGithub, link: "https://github.com/R3-da/S.T.S_v6" },
-        { icon: BsAndroid, link: "/sts.apk" },
+        { icon: BiSolidDownload, link: "/sts.apk" },
       ],
       description: "ShapeSwipe :  Fidget & Play With Shapes",
     },
