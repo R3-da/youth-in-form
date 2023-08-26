@@ -36,9 +36,10 @@ export default function Home() {
     {
       imageUrl: web3,
       icons: [
-        { icon: AiFillGithub, link: "https://github.com/R3-da/youtube-music-downloader" },
+        { icon: AiFillGithub, link: "https://github.com/R3-da/S.T.S_v6" },
+        { icon: BsAndroid, link: "/sts.apk" },
       ],
-      description: "Python Youtube Playlist Downloader",
+      description: "ShapeSwipe :  Fidget & Track with Shapes",
     },
     {
       imageUrl: web4,
