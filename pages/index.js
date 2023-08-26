@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-//import { BiSolidDownload } from "react-icons/bi";
+import { BiSolidDownload } from "react-icons/bi";
 import { BsAndroid, BsStackOverflow, BsFillMoonStarsFill } from 'react-icons/bs';
 import { FaHandPointDown, FaGooglePlay } from "react-icons/fa";
 import { useState } from "react";
