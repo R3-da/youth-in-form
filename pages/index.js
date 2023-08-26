@@ -39,7 +39,7 @@ export default function Home() {
         { icon: AiFillGithub, link: "https://github.com/R3-da/S.T.S_v6" },
         { icon: BsAndroid, link: "/sts.apk" },
       ],
-      description: "ShapeSwipe :  Fidget & Track with Shapes",
+      description: "ShapeSwipe :  Fidget & Play With Shapes",
     },
     {
       imageUrl: web4,
