@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { BiSolidDownload } from "react-icons/bi";
-import { BsAndroid, BsStackOverflow, BsFillMoonStarsFill } from 'react-icons/bs';
+import { BsCloudDownloadFill, BsStackOverflow, BsFillMoonStarsFill } from 'react-icons/bs';
 import { FaHandPointDown, FaGooglePlay } from "react-icons/fa";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
@@ -30,7 +29,7 @@ export default function Home() {
       imageUrl: web2,
       icons: [
         { icon: AiFillGithub, link: "https://github.com/R3-da/Daytics" },
-        { icon: BsAndroid, link: "/daytics.apk" },
+        { icon: BsCloudDownloadFill, link: "/daytics.apk" },
       ],
       description: "Daytics : Plan & Keep Track Of Your Day",
     },
@@ -38,7 +37,7 @@ export default function Home() {
       imageUrl: web3,
       icons: [
         { icon: AiFillGithub, link: "https://github.com/R3-da/S.T.S_v6" },
-        { icon: BsAndroid, link: "/sts.apk" },
+        { icon: BsCloudDownloadFill, link: "/sts.apk" },
       ],
       description: "ShapeSwipe :  Fidget & Play With Shapes",
     },
